@@ -1,29 +1,36 @@
 package decrator;
 
 public class DecoratedItem implements DecorateItem {
-
+	
+	private DecorateItem decorated; 
+	
+	public DecoratedItem(DecorateItem decorated) {
+		this.decorated = decorated;
+		
+	}
+	
 	@Override
-	public String getColour() {
-		// TODO Auto-generated method stub
-		return null;
+	public void getColour() {
+		System.out.println("Red");
+		decorated.getColour();
 	}
 
 	@Override
-	public int getSize() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int getPrice() {
+		return decorated.getPrice() + 50; 
+		
 	}
 
 	@Override
-	public String getLaceColour() {
-		// TODO Auto-generated method stub
-		return null;
+	public void getLaceColour() {
+		System.out.println("Black");
+		decorated.getColour();
 	}
 
 	@Override
-	public String getSoleColour() {
-		// TODO Auto-generated method stub
-		return null;
+	public void getSoleColour() {
+		System.out.println("Grey");
+		decorated.getSoleColour();
 	}
 
 }
