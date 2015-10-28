@@ -2,6 +2,10 @@ package decrator;
 
 public class DecoratedItem implements DecorateItem {
 	
+	/**
+	 * @uml.property  name="decorated"
+	 * @uml.associationEnd  multiplicity="(1 1)"
+	 */
 	private DecorateItem decorated; 
 	
 	public DecoratedItem(DecorateItem decorated) {

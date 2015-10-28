@@ -4,6 +4,9 @@ public enum UserType {
 	
 	PLATINUM_ACCESS("platinum access"),GOLD_ACCESS("gold access"),SILVER_ACCESS("silver acces"), ADMIN("admin");
 	
+	/**
+	 * @uml.property  name="title"
+	 */
 	private String title;
 	
 	UserType(String title) {
