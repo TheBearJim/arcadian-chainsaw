@@ -10,7 +10,7 @@ public class BuildIt {
 		Car Mercedes = new CarBuilder(Brand.MERCERDES)
 					.ModelType(Model.SCLASS)
 					.Colour(Colour.BLACK)
-					.Rims(Rims.TWENTYONEINCH)
+					.Seats(Seats.LEATHER)
 					.build();
 					System.out.println(Mercedes);
 	}

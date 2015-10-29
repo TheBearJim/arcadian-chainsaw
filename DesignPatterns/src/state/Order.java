@@ -1,6 +1,9 @@
 package state;
 
 
+/**
+ * @uml.dependency   supplier="state.State"
+ */
 public class Order {
 	
 	private State state;

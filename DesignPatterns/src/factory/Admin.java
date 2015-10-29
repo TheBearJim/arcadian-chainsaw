@@ -1,5 +1,8 @@
 package factory;
 
+/**
+ * @uml.dependency   supplier="factory.AdminDetails"
+ */
 public class Admin implements UserFactory  {
 	
 	

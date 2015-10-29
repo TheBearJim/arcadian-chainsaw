@@ -1,5 +1,8 @@
 package factory;
 
+/**
+ * @uml.dependency   supplier="factory.NormalUserDetails"
+ */
 public class NormalUser implements UserFactory {
 
 	

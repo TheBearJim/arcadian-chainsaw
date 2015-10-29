@@ -1,5 +1,8 @@
 package state;
 
+/**
+ * @uml.dependency   supplier="state.Order"
+ */
 public class PaymentNotAccepted implements State {
 
 	private Order order ;

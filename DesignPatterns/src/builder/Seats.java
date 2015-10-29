@@ -1,8 +1,8 @@
 package builder;
 
-public enum Rims {
+public enum Seats {
 	
-	TENINCH, FIFTEENINCH, TWENTYINCH, TWENTYONEINCH;
+	LEATHER, PLUSH, HEATED, REGULAR;
 	
 	public String toString(){
 		return name().toLowerCase();

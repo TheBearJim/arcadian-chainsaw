@@ -5,7 +5,7 @@ public class Car {
 	private final Brand brand;
 	private final Model model;
 	private final Colour colour;
-	private final Rims rims;
+	private final Seats seats;
 	//room to add more
 	
 	public Brand getBrand(){
@@ -20,8 +20,8 @@ public class Car {
 		return colour ;
 	}
 	
-	public Rims getRims(){
-		return rims ;
+	public Seats getSeats(){
+		return seats ;
 	}
 	
 	@Override
@@ -33,8 +33,8 @@ public class Car {
 		s.append(model);
 		s.append("Colour:");
 		s.append(colour);
-		s.append("Rims: ");
-		s.append(rims);
+		s.append("Seats: ");
+		s.append(seats);
 		s.append(".");
 		return s.toString();
 	}
@@ -43,7 +43,7 @@ public class Car {
 		this.brand =  builder.brand;
 		this.colour = builder.colour;
 		this.model = builder.model;
-		this.rims = builder.rims;
+		this.seats = builder.seats;
 	}
 	
 
@@ -52,7 +52,7 @@ public class Car {
 		private  Brand brand;
 		private  Model model;
 		private  Colour colour;
-		private  Rims rims;
+		private  Seats seats;
 		//room to add more
 		
 		
@@ -79,11 +79,11 @@ public class Car {
 			return this;
 		}
 		
-		public CarBuilder Rims(Rims rims){
-			if(rims == null){
+		public CarBuilder Seats(Seats seats){
+			if(seats == null){
 				throw new IllegalArgumentException("rims cannot be null");
 			}
-			this.rims = rims;
+			this.seats = seats;
 			return this ;
 		}
 		public Car build(){

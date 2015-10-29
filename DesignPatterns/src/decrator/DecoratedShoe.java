@@ -1,6 +1,9 @@
 package decrator;
 
-public class DecoratedItem implements DecorateItem {
+/**
+ * @uml.dependency   supplier="decrator.DecorateItem"
+ */
+public class DecoratedShoe implements DecorateItem {
 	
 	/**
 	 * @uml.property  name="decorated"
@@ -8,7 +11,7 @@ public class DecoratedItem implements DecorateItem {
 	 */
 	private DecorateItem decorated; 
 	
-	public DecoratedItem(DecorateItem decorated) {
+	public DecoratedShoe(DecorateItem decorated) {
 		this.decorated = decorated;
 		
 	}
