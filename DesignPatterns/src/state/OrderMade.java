@@ -2,7 +2,6 @@ package state;
 
 public class OrderMade implements State {
 	
-	private State state ;
 	private Order order;
 	
 	public OrderMade(Order order){

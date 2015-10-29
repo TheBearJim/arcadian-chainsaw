@@ -2,7 +2,6 @@ package state;
 
 public class PaymentNotAccepted implements State {
 
-	private State state;
 	private Order order ;
 	
 	public PaymentNotAccepted(Order order){
