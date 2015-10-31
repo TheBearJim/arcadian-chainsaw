@@ -7,10 +7,7 @@ public class PlainShoe implements DecorateItem {
 		System.out.println("Plain shoe colour");
 	}
 
-	@Override
-	public int getPrice() {
-		return 40;
-	}
+
 
 	@Override
 	public void getLaceColour() {

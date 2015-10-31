@@ -18,25 +18,20 @@ public class DecoratedShoe implements DecorateItem {
 	
 	@Override
 	public void getColour() {
-		System.out.println("Red");
+		System.out.println("Decorated Red");
 		decorated.getColour();
 	}
 
-	@Override
-	public int getPrice() {
-		return decorated.getPrice() + 50; 
-		
-	}
 
 	@Override
 	public void getLaceColour() {
-		System.out.println("Black");
+		System.out.println("Decorated Black");
 		decorated.getColour();
 	}
 
 	@Override
 	public void getSoleColour() {
-		System.out.println("Grey");
+		System.out.println("Decorated Grey");
 		decorated.getSoleColour();
 	}
 

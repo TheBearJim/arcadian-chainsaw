@@ -9,7 +9,7 @@ public class Order {
 	private State state;
 	
 	public Order(){
-		state = new PaymentAccepted(this);
+		state = new PaymentNotAccepted(this);
 	}
 	
 	public void stateOfOrder(){

@@ -1,6 +1,6 @@
 package factory;
 
-public class BuildIt {
+public class BuildItFactory {
 	
 	public static void main(String[] args){
 		UserFactory userfactory; 

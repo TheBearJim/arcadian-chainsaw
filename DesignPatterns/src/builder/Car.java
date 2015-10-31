@@ -27,13 +27,13 @@ public class Car {
 	@Override
 	public String toString(){
 		StringBuilder s = new StringBuilder();
-		s.append("Car type:");
+		s.append("Car type:	");
 		s.append(brand);
-		s.append("Model Number:");
+		s.append("	Model:	");
 		s.append(model);
-		s.append("Colour:");
+		s.append("	Colour:	");
 		s.append(colour);
-		s.append("Seats: ");
+		s.append("	Seats:	");
 		s.append(seats);
 		s.append(".");
 		return s.toString();
