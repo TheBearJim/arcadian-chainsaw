@@ -6,16 +6,8 @@ public class ThreadExample implements Runnable {
 	public ThreadExample() {
 	}
 
-	public void run() {
-		while (ThreadExample.counter <= 0) {
-			try {
-				System.out.println("" + (++ThreadExample.counter));
-				Thread.sleep(100);
-			} catch (InterruptedException ex) {
-				System.out.println("Exception in thread:" + ex.getMessage());
-
-			}
-		}
+	public void run() {	
+		
 	}
 
 	public static class RunThisTing {
@@ -24,22 +16,21 @@ public class ThreadExample implements Runnable {
 			ThreadExample x = new ThreadExample();
 			Thread y = new Thread(x);
 			y.start();
-			while (ThreadExample.counter <= 0) {
 				try {
+					System.out.println("Builder thread:");
 					new BuildItBuilder();
 					BuildItBuilder.main(args);
 					
-					System.out.println("Main thread:"
-							+ (++ThreadExample.counter));
+					
 					Thread.sleep(100);
 				} catch (InterruptedException ex) {
-					System.out.println("Exception in  main thread:"
+					System.out.println("Exception in builder thread:"
 							+ ex.getMessage());
 
 				}
 			}
 
 		}
-	}
+	
 }
 
