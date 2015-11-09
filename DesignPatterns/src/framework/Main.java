@@ -1,5 +1,8 @@
 package framework;
 
+import interceptor.DoInterceptor;
+import interceptor.InterceptorJim;
+
 import java.util.Scanner;
 
 import factory.*;
@@ -19,7 +22,9 @@ public class Main {
 	
 
 	}
-
+	
+	
+	
 	public static void StartFramework(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int option;
@@ -27,16 +32,22 @@ public class Main {
 				.println("[1]Factory a user [2]Build a car [3]Check state [4]Choose strat [5]Decorate a shoe ");
 		System.out.println();
 		option = s.nextInt();
-
+		
 		if (option == 1) {
+			long start  = System.currentTimeMillis();		// for getting difference in time when using threads
 			new BuildItFactory();
 			BuildItFactory.main(args);
+			long end = System.currentTimeMillis();
+			System.out.println((end - start)+ "ms ");
 			StartFramework(args);
 
+			
 		} else {
 			if (option == 2) {
-				new ThreadExample();
+				long start  = System.currentTimeMillis();
 				RunThisTing.main(args);
+				long end = System.currentTimeMillis();
+				System.out.println((end - start)+ "ms ");
 				StartFramework(args);
 
 			} else {
@@ -47,9 +58,12 @@ public class Main {
 
 				} else {
 					if (option == 4) {
+						new DoInterceptor();
 						new BuiltItStrat();
 						BuiltItStrat.main(args);
+						//DoInterceptor.
 						StartFramework(args);
+						
 
 					} else {
 						if (option == 5) {

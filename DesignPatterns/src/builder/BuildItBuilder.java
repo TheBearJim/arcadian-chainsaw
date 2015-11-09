@@ -6,7 +6,7 @@ import builder.Car.CarBuilder;
 
 public class BuildItBuilder {
 	
-	public static void main(String[] args){
+	public static void BuildIt(){
 		
 	Scanner s = new Scanner(System.in);
 	int option;
